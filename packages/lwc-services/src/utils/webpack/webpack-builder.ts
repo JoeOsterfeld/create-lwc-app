@@ -28,7 +28,7 @@ function buildWebpackConfig({ entries, outputDir, mode, customConfig }: any) {
         output: {
             path: outputDir,
             filename: 'app-[contenthash].js',
-            publicPath: './'
+            publicPath: '/'
         },
 
         plugins: [new webpack.DefinePlugin(DEFINE_CONFIG)],
